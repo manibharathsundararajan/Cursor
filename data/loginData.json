@@ -1,0 +1,12 @@
+[
+  { "scenario": "valid", "username": "standard_user", "password": "secret_sauce" },
+  { "scenario": "locked_out", "username": "locked_out_user", "password": "secret_sauce" },
+  { "scenario": "invalid_username", "username": "invalid_user", "password": "secret_sauce" },
+  { "scenario": "invalid_password", "username": "standard_user", "password": "wrong_password" },
+  { "scenario": "empty_both", "username": "", "password": "" },
+  { "scenario": "empty_username", "username": "", "password": "secret_sauce" },
+  { "scenario": "empty_password", "username": "standard_user", "password": "" },
+  { "scenario": "long_input", "username": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "password": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb" },
+  { "scenario": "special_chars", "username": "!@#$%^&*", "password": "!@#$%^&*" },
+  { "scenario": "sql_injection", "username": "' OR 1=1 --", "password": "' OR 1=1 --" }
+] 

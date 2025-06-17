@@ -1,0 +1,25 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "allure:report": "npx allure generate ./allure-results --clean -o ./allure-report",
+    "allure:open": "npx allure open ./allure-report",
+    "report:pdf": "ts-node utils/generatePdfReport.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.53.0",
+    "@types/puppeteer": "^5.4.7",
+    "allure-playwright": "^3.2.2",
+    "dotenv": "^16.5.0",
+    "playwright": "^1.53.0",
+    "puppeteer": "^24.10.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
